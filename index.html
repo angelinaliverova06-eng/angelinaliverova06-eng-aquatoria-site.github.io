@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акватория - Семейный клуб</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <div class="logo-box">
+                <div class="logo-text">AQUA</div>
+                <div class="logo-star">★★★</div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#trainers">Тренеры</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Pool -->
+    <section class="pool-bg">
+        <div class="welcome-text">
+            <p>
+                Добро пожаловать в Акваторию – многофункциональный семейный клуб, посвященный здоровью, развитию и гармонии!
+            </p>
+            <p>
+                Мы создали уникальное пространство, где каждый член семьи – от самых маленьких до взрослых – найдет занятие по душе и получит профессиональную заботу.
+            </p>
+            <a href="#contacts" class="btn-primary">Записаться на пробное занятие</a>
+        </div>
+    </section>
+
+    <!-- Directions Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">Наши ключевые направления:</h2>
+        <div class="directions">
+            <div class="direction-card">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face" alt="Детское плавание">
+                <h3>Детское плавание</h3>
+                <p>
+                    Под руководством наших тренеров малыши делают свои первые безопасные шаги в воде и осваивают спортивные стили. Мы используем современные методики, чтобы привить любовь к воде на всю жизнь.
+                </p>
+            </div>
+            <div class="direction-card">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face" alt="Акваэробика для будущих мам">
+                <h3>Акваэробика для будущих мам</h3>
+                <p>
+                    Специально разработанные программы в воде помогут поддержать форму, снять нагрузку с позвоночника и подготовить тело к родам в самой комфортной и безопасной среде.
+                </p>
+            </div>
+            <div class="direction-card">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face" alt="Оздоровительный спа">
+                <h3>Оздоровительный спа (соляная пещера и кедровая бочка)</h3>
+                <p>
+                    Идеальное место для восстановления после тренировок, профилактики простуд и релаксации. Чистый воздух, насыщенный микроэлементами, дарит глубокое расслабление и укрепляет иммунитет.
+                </p>
+            </div>
+        </div>
+        <button class="btn-secondary" onclick="scrollToSection('contacts')">Записаться на пробное занятие</button>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="catalog">
+        <h2 class="catalog-title">Каталог</h2>
+        
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Водные программы</th>
+                    <th>Индивидуальные тренировки<br>Абонемент 1</th>
+                    <th>Абонемент 4</th>
+                    <th>Абонемент 8</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Персональная тренировка (30 мин.)</td>
+                    <td>1450</td>
+                    <td>5600</td>
+                    <td>9100</td>
+                </tr>
+                <tr>
+                    <td>Персональная тренировка (45 мин.)</td>
+                    <td>2200</td>
+                    <td>8400</td>
+                    <td>12000</td>
+                </tr>
+                <tr>
+                    <td>Мама + Малыш, Адаптация (30 мин.)</td>
+                    <td>1700</td>
+                    <td>6400</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Спец. цена 2 и более детей (30 мин.)</td>
+                    <td>1200</td>
+                    <td>4600</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="table-note">1. До 3х месяцев дают скидку на продленный абонемент, скидка начисляется индивидуально</p>
+        <p class="table-note">2. В эти расценки не входит абонемент, а так же личный выезд тренера, если организатор был заинтересован на выезде</p>
+        <p class="table-note">3. Также за сим же консультируем по вашей связи, как сами понять покупку абонемента исходя из требований</p>
+
+        <h3 class="table-title">Абонементные программы</h3>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Групповые тренировки</th>
+                    <th>Абонемент 1</th>
+                    <th>Абонемент 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Мама + Малыш (45 мин.)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Аквааэробика для беременных (60 мин.)</td>
+                    <td>1400</td>
+                    <td>5200</td>
+                </tr>
+                <tr>
+                    <td>Спортивное плавание (45 мин.)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="table-note">1. Срок действия группового абонемента - 1 месяц со дня активации</p>
+
+        <h3 class="table-title">Соляная комната</h3>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>1 сеанс</th>
+                    <th>10 сеансов</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Мама + Малыш (45 мин.)</td>
+                    <td>500</td>
+                    <td>4000</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="table-note">1. Детям до 7 лет обязательно сопровождение взрослого</p>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <h2 class="reviews-title">Отзывы</h2>
+        <div class="review-card">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop&crop=face" alt="Мария Засульская">
+            <h3>Мария Засульская</h3>
+            <p>
+                Отличное место для занятий грудничковым плаванием, ходим с дочкой с 3 до 7 месяцев, ребенок сильный, активный, но спокойный, любит воду, развивается вовремя, даже чуть с опережением. В этом и была цель похода в бассейн, все чисто, комфортно, спасибо акватории
+            </p>
+        </div>
+        <div class="slider-dots">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="trainers" id="trainers">
+        <h2 class="trainers-title">Тренеры</h2>
+        <div class="trainers-grid">
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face" alt="Мальцева Елена">
+                <p>Мальцева Елена</p>
+            </div>
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Аницик Наталья">
+                <p>Аницик Наталья</p>
+            </div>
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1598550874175-4d0ef436c909?w=200&h=200&fit=crop&crop=face" alt="Травнева Нелли">
+                <p>Травнева Нелли</p>
+            </div>
+        </div>
+        <button class="btn-more" onclick="showAllTrainers()">Подробнее</button>
+    </section>
+
+    <!-- Contacts Section -->
+    <section class="contacts" id="contacts">
+        <h2 class="contacts-title">Контакты</h2>
+        <div class="map-placeholder">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.5!2d38.9697!3d45.0355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDAyJzA3LjgiTiAzOMKwNTgnMTAuOSJF!5e0!3m2!1sen!2sru!4v1234567890" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <p>Краснодар, Фестивальный микрорайон,<br>улица Яна Полуяна, 33</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

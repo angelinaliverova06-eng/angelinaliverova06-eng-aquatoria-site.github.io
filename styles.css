@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f4fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-box {
+    background: linear-gradient(135deg, #0099cc 0%, #00bcd4 100%);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+
+.logo-star {
+    color: #ff6699;
+    font-size: 12px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #0099cc;
+}
+
+/* Hero Section with Pool */
+.pool-bg {
+    background: linear-gradient(to bottom, #87CEEB 0%, #00CED1 50%, #20B2AA 100%);
+    min-height: 350px;
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;
+    position: relative;
+}
+
+.pool-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(ellipse at 20% 80%, rgba(255,255,255,0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 60%, rgba(255,255,255,0.2) 0%, transparent 40%);
+}
+
+.welcome-text {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px;
+    position: relative;
+    z-index: 1;
+}
+
+.welcome-text p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00bcd4 0%, #4dd0e1 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #00acc1 0%, #26c6da 100%);
+}
+
+/* Directions Section */
+.section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.directions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.direction-card {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.direction-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.direction-card h3 {
+    font-size: 12px;
+    color: #0099cc;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.direction-card p {
+    font-size: 10px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #00bcd4 0%, #4dd0e1 100%);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 11px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #00acc1 0%, #26c6da 100%);
+}
+
+/* Catalog Section */
+.catalog {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.catalog-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.price-table {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.price-table th {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-weight: normal;
+}
+
+.price-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.price-table th:not(:first-child),
+.price-table td:not(:first-child) {
+    text-align: center;
+}
+
+.table-title {
+    font-size: 14px;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+
+.table-note {
+    font-size: 10px;
+    color: #666;
+    margin-top: 5px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Reviews Section */
+.reviews {
+    background: linear-gradient(180deg, #e0f7fa 0%, #b2ebf2 100%);
+    padding: 40px 20px;
+}
+
+.reviews-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.review-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin-left: 15px;
+}
+
+.review-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review-card p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.dot:hover {
+    background-color: #66bbcc;
+}
+
+.dot.active {
+    background-color: #00bcd4;
+}
+
+/* Trainers Section */
+.trainers {
+    background: linear-gradient(180deg, #b2ebf2 0%, #80deea 100%);
+    padding: 40px 20px;
+}
+
+.trainers-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.trainers-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.trainer-card {
+    text-align: center;
+}
+
+.trainer-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.trainer-card p {
+    font-size: 12px;
+    color: #333;
+}
+
+.btn-more {
+    background: linear-gradient(135deg, #00bcd4 0%, #4dd0e1 100%);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-more:hover {
+    background: linear-gradient(135deg, #00acc1 0%, #26c6da 100%);
+}
+
+/* Contacts Section */
+.contacts {
+    background: linear-gradient(180deg, #80deea 0%, #4dd0e1 100%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contacts-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.map-placeholder {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.map-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacts p {
+    font-size: 14px;
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .directions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .direction-card {
+        max-width: 250px;
+    }
+
+    .welcome-text {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+}
