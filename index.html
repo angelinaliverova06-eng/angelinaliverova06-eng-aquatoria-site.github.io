@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Акватория - Семейный клуб</title>
+    <title>Акватория</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="logo">
             <div class="logo-box">
-                <div class="logo-text">AQUA</div>
-                <div class="logo-star">★★★</div>
+                <img src="/photos/logo1.png" alt="main logo">
             </div>
         </div>
         <nav>
@@ -26,193 +26,279 @@
         </nav>
     </header>
 
-    <!-- Hero Section with Pool -->
-    <section class="pool-bg">
-        <div class="welcome-text">
-            <p>
-                Добро пожаловать в Акваторию – многофункциональный семейный клуб, посвященный здоровью, развитию и гармонии!
-            </p>
-            <p>
-                Мы создали уникальное пространство, где каждый член семьи – от самых маленьких до взрослых – найдет занятие по душе и получит профессиональную заботу.
-            </p>
-            <a href="#contacts" class="btn-primary">Записаться на пробное занятие</a>
+    <section class="hero-section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="/photos/920b9390-bdb6-4214-92ac-29de19d2a62a.MP4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
         </div>
+        <div class="hero-content"></div>
     </section>
 
-    <!-- Directions Section -->
-    <section class="section" id="about">
-        <h2 class="section-title">Наши ключевые направления:</h2>
-        <div class="directions">
-            <div class="direction-card">
-                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face" alt="Детское плавание">
-                <h3>Детское плавание</h3>
-                <p>
-                    Под руководством наших тренеров малыши делают свои первые безопасные шаги в воде и осваивают спортивные стили. Мы используем современные методики, чтобы привить любовь к воде на всю жизнь.
-                </p>
+    <div class="main-content">
+        <section class="pool-bg" id="about">
+            <div class="welcome-text">
+                <p>Добро пожаловать в Акваторию – многофункциональный семейный клуб, посвященный здоровью, развитию и гармонии!</p>
+                <p>Мы создали уникальное пространство, где каждый член семьи – от самых маленьких до взрослых – найдет занятие по душе и получит профессиональную заботу.</p>
+                <button class="btn-primary call-btn" data-action="call">Записаться на пробное занятие</button>
             </div>
-            <div class="direction-card">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face" alt="Акваэробика для будущих мам">
-                <h3>Акваэробика для будущих мам</h3>
-                <p>
-                    Специально разработанные программы в воде помогут поддержать форму, снять нагрузку с позвоночника и подготовить тело к родам в самой комфортной и безопасной среде.
-                </p>
+        </section>
+
+        <section class="section" id="directions">
+            <h2 class="section-title">Наши ключевые направления:</h2>
+            <div class="directions">
+                <div class="direction-card">
+                    <div class="direction-bg-image">
+                        <img src="/photos/logo2.png" alt="Детское плавание">
+                    </div>
+                    <div class="direction-content">
+                        <h3>Детское плавание</h3>
+                        <p>Под руководством наших тренеров малыши делают свои первые безопасные шаги в воде и осваивают спортивные стили. Мы используем современные методики, чтобы привить любовь к воде на всю жизнь.</p>
+                    </div>
+                </div>
+                
+                <div class="direction-card">
+                    <div class="direction-bg-image">
+                        <img src="/photos/logo2.png" alt="Акваэробика для будущих мам">
+                    </div>
+                    <div class="direction-content">
+                        <h3>Акваэробика для будущих мам</h3>
+                        <p>Специально разработанные программы в воде помогут поддержать форму, снять нагрузку с позвоночника и подготовить тело к родам в самой комфортной и безопасной среде.</p>
+                    </div>
+                </div>
+                
+                <div class="direction-card">
+                    <div class="direction-bg-image">
+                        <img src="/photos/logo2.png" alt="Оздоровительный спа">
+                    </div>
+                    <div class="direction-content">
+                        <h3>Оздоровительный спа (соляная пещера и кедровая баня)</h3>
+                        <p>Идеальное место для восстановления после тренировок, профилактики простуд и релаксации. Чистый воздух, насыщенный микроэлементами, дарит глубокое расслабление и укрепляет иммунитет.</p>
+                    </div>
+                </div>
             </div>
-            <div class="direction-card">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face" alt="Оздоровительный спа">
-                <h3>Оздоровительный спа (соляная пещера и кедровая бочка)</h3>
-                <p>
-                    Идеальное место для восстановления после тренировок, профилактики простуд и релаксации. Чистый воздух, насыщенный микроэлементами, дарит глубокое расслабление и укрепляет иммунитет.
-                </p>
+        </section>
+
+        <section class="catalog" id="catalog">
+            <h2 class="catalog-title">Каталог</h2>
+            <img src="/photos/table1.png" alt="table 1">
+            <p class="table-note">1. Центр предоставляет услугу по предварительной оплате, посетитель оплачивает каждое последующее занятие вперёд.</p>
+            <p class="table-note">2. В случае пропуска по болезни, бронь может быть перенесена, если администратор был предупреждён по телефону до 21:00 за день до дня тренировки. В иных случаях занятие считается проведённым и его стоимость не возмещается</p>
+
+            <h3 class="table-title">Абонементные программы</h3>
+            <img src="/photos/table2.png" alt="table 2">
+            <p class="table-note">1. Срок действия группового абонемента - 1 месяц со дня активации</p>
+
+            <h3 class="table-title">Соляная комната</h3>
+            <img src="/photos/table3.png" alt="table 3">
+            <p class="table-note">1. Детям до 7 лет обязательно сопровождение взрослых!</p>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <h2 class="reviews-title">Отзывы</h2>
+            <div class="reviews-slider">
+                <button class="slider-arrow prev">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                
+                <div class="slider-content">
+                    <div class="slider-track">
+                        <div class="review-slide active">
+                            <div class="review-card">
+                                <h3>Мария Засульская</h3>
+                                <p>Отличное место для занятий грудничковым плаванием, ходим с дочкой с 3 до 7 месяцев, ребенок сильный, активный, но спокойный, любит воду, развивается вовремя, даже чуть с опережением. В этом и была цель похода в бассейн, все чисто, комфортно, спасибо акватории</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review-slide">
+                            <div class="review-card">
+                                <h3>PeterPan</h3>
+                                <p>Отличный бассейн! Ребята детского центра "PeterPan" с удовольствием посещали занятия в рамках спортивной смены летнего лагеря. В бассейне чисто, весь персонал очень внимательный. Занятия проходили на высшем уровне, многие дети научились плавать за две недели. Кроме того, ребята прошли оздоровительный курс в соляной пещере, за что отдельное спасибо руководству оздоровительного центра "Акватория"</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review-slide">
+                            <div class="review-card">
+                                <h3>Маргарита Моисеева</h3>
+                                <p>Самый лучший тренер Наталья, СПАСИБО за профессионализм, отношение к ребенку!! Гоша бежит с удовольствием , сейчас поменяли тренера, ( в силу обстоятельств) Оооочень хотелось бы вернуться!!! Персонал ВСЕГДА приветлив и доброжелателен, ребята ВСЕ классные , но Наталья лучшая !!!! С Новым Годом Всех , добра и благополучия!!!!!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review-slide">
+                            <div class="review-card">
+                                <h3>Наталья Николаевна</h3>
+                                <p>Хочу поделится впечатлением о бассейне и о нашем прекрасном тренере Людмиле, моему сыну 5 лет он инвалид с рождения перенес несколько операций на сердце, у него атрофия глазного нерва, ребёнок не разговаривал, Людмила подобрала программу для его диагноза, ребёнок начал говорить, очень любит воду , и хорошо плавает . На соревнованиях занял 1 место . Такого подхода я не видела, очень благодарна прекрасному специалисту и отличному человеку ❤️</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review-slide">
+                            <div class="review-card">
+                                <h3>Aнастасия Ремизова</h3>
+                                <p>Лучшее водное пространство!!! Водила старшего ребёнка, как минимум, в три бассейна, однако акватория не оставляет шансов никому, прям со входа влюбляет в себя! А тренер Людмила вообще выше всяких похвал! Очень всем рекомендую ❤️</p>
+                            </div>
+                        </div>
+
+                        <div class="review-slide">
+                            <div class="review-card">
+                                <h3>Анонимный отзыв</h3>
+                                <p>Я хочу сказать что замена тренера, в виду разных обстоятельств, ведёт за собой небольшой стресс для ребенка, но не всегда, но это и нормально. В нашем случае все прошло потрясающе потому что все тренеры акватории настоящие профессионалы своего дела, а Глеб в свою очередь начал показывать отличные результаты в плавании, произошел большой скачок в его достижениях. С постоянным тренером у них уже сложились свои тесные отношения и он позволяет себе лениться, а с другими максимально сосредоточен и направлен на работу, это прекрасно! Поэтому не стоит бояться замены тренера, иногда это даже полезно!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="slider-arrow next">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
             </div>
-        </div>
-        <button class="btn-secondary" onclick="scrollToSection('contacts')">Записаться на пробное занятие</button>
-    </section>
+        </section>
 
-    <!-- Catalog Section -->
-    <section class="catalog" id="catalog">
-        <h2 class="catalog-title">Каталог</h2>
-        
-        <table class="price-table">
-            <thead>
-                <tr>
-                    <th>Водные программы</th>
-                    <th>Индивидуальные тренировки<br>Абонемент 1</th>
-                    <th>Абонемент 4</th>
-                    <th>Абонемент 8</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Персональная тренировка (30 мин.)</td>
-                    <td>1450</td>
-                    <td>5600</td>
-                    <td>9100</td>
-                </tr>
-                <tr>
-                    <td>Персональная тренировка (45 мин.)</td>
-                    <td>2200</td>
-                    <td>8400</td>
-                    <td>12000</td>
-                </tr>
-                <tr>
-                    <td>Мама + Малыш, Адаптация (30 мин.)</td>
-                    <td>1700</td>
-                    <td>6400</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Спец. цена 2 и более детей (30 мин.)</td>
-                    <td>1200</td>
-                    <td>4600</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="table-note">1. До 3х месяцев дают скидку на продленный абонемент, скидка начисляется индивидуально</p>
-        <p class="table-note">2. В эти расценки не входит абонемент, а так же личный выезд тренера, если организатор был заинтересован на выезде</p>
-        <p class="table-note">3. Также за сим же консультируем по вашей связи, как сами понять покупку абонемента исходя из требований</p>
+        <section class="trainers-slider-section" id="trainers">
+            <div class="container">
+                <h2 class="section-title">Тренеры</h2>
+                
+                <div class="trainers-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/anishic_natalia.jpg" alt="Анищик Наталья">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Анищик Наталья</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/bazhenova_julia.jpg" alt="Баженова Юлия">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Баженова Юлия</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/gazanov_vladimir.jpg" alt="Гасанов Владимир">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Гасанов Владимир</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/kramar_elena.jpg" alt="Крамарь Елена">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Крамарь Елена</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/krivenkova_nathalie.jpg" alt="Кривенкова Наталья">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Кривенкова Наталья</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/kuplenova_arevic.png" alt="Купленова Аревик">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Купленова Аревик</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/liholet_nathalie.jpg" alt="Лихолет Наталья">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Лихолет Наталья</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/liverova_ludmila.jpg" alt="Ливерова Людмила">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Ливерова Людмила</span>
+                                    </div>
+                                </div>
+                            </div>
 
-        <h3 class="table-title">Абонементные программы</h3>
-        <table class="price-table">
-            <thead>
-                <tr>
-                    <th>Групповые тренировки</th>
-                    <th>Абонемент 1</th>
-                    <th>Абонемент 4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Мама + Малыш (45 мин.)</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Аквааэробика для беременных (60 мин.)</td>
-                    <td>1400</td>
-                    <td>5200</td>
-                </tr>
-                <tr>
-                    <td>Спортивное плавание (45 мин.)</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="table-note">1. Срок действия группового абонемента - 1 месяц со дня активации</p>
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/maltseva_elena.jpg" alt="Мальцева Елена">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Мальцева Елена</span>
+                                    </div>
+                                </div>
+                            </div>
 
-        <h3 class="table-title">Соляная комната</h3>
-        <table class="price-table">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>1 сеанс</th>
-                    <th>10 сеансов</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Мама + Малыш (45 мин.)</td>
-                    <td>500</td>
-                    <td>4000</td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="table-note">1. Детям до 7 лет обязательно сопровождение взрослого</p>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
-        <h2 class="reviews-title">Отзывы</h2>
-        <div class="review-card">
-            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop&crop=face" alt="Мария Засульская">
-            <h3>Мария Засульская</h3>
-            <p>
-                Отличное место для занятий грудничковым плаванием, ходим с дочкой с 3 до 7 месяцев, ребенок сильный, активный, но спокойный, любит воду, развивается вовремя, даже чуть с опережением. В этом и была цель похода в бассейн, все чисто, комфортно, спасибо акватории
-            </p>
-        </div>
-        <div class="slider-dots">
-            <button class="dot active" data-index="0"></button>
-            <button class="dot" data-index="1"></button>
-            <button class="dot" data-index="2"></button>
-        </div>
-    </section>
-
-    <!-- Trainers Section -->
-    <section class="trainers" id="trainers">
-        <h2 class="trainers-title">Тренеры</h2>
-        <div class="trainers-grid">
-            <div class="trainer-card">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face" alt="Мальцева Елена">
-                <p>Мальцева Елена</p>
+                            <div class="carousel-slide">
+                                <div class="trainer-photo-card">
+                                    <img src="/photos/travneva_nelli.jpg" alt="Травнева Нелли">
+                                    <div class="trainer-name-overlay">
+                                        <span class="trainer-name">Травнева Нелли</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn prev-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="carousel-dots"></div>
             </div>
-            <div class="trainer-card">
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&crop=face" alt="Аницик Наталья">
-                <p>Аницик Наталья</p>
-            </div>
-            <div class="trainer-card">
-                <img src="https://images.unsplash.com/photo-1598550874175-4d0ef436c909?w=200&h=200&fit=crop&crop=face" alt="Травнева Нелли">
-                <p>Травнева Нелли</p>
-            </div>
-        </div>
-        <button class="btn-more" onclick="showAllTrainers()">Подробнее</button>
-    </section>
+        </section>
 
-    <!-- Contacts Section -->
-    <section class="contacts" id="contacts">
-        <h2 class="contacts-title">Контакты</h2>
-        <div class="map-placeholder">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.5!2d38.9697!3d45.0355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDAyJzA3LjgiTiAzOMKwNTgnMTAuOSJF!5e0!3m2!1sen!2sru!4v1234567890" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
-        <p>Краснодар, Фестивальный микрорайон,<br>улица Яна Полуяна, 33</p>
-    </section>
+        <section class="location-section" id="contacts">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                
+                <div class="location-info">                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Краснодар, Фестивальный микрорайон, улица Яна Полуяна, 33</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-container">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.898832612449!2d38.949381!3d45.0643522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f28101875d7%3A0x7d3c1e63b6908228!2z0JDQutCy0LDRgtC-0YDQuNGPIC0g0J7Qt9C00L7RgNC-0LLQuNGC0LXQu9GM0L3Ri9C5INCk0LjRgtC90LXRg9GG0LXQvdGC0YAg0YEg0LHQsNGB0YHQtdC50L3QsNC80Lg!5e0!3m2!1sru!2sru!4v1700000000000!5m2!1sru!2sru" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
